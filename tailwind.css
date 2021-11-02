@@ -188391,3 +188391,41 @@ video {
 }
 
 /* utilities */
+.globleWidth{
+    max-width: 1316px;
+    margin: 0 auto;
+}
+.headerBorder{
+    border-bottom: 2px solid rgba(46,62,72,.12);
+}
+
+.grid1{
+    grid-template-columns: 1fr 300px;
+    width: 100%;
+}
+.flexImageWidth{
+    min-width: 300px;
+}
+
+.pWidth{
+    max-width: 500px;
+}
+.gridHeight{
+    max-height: 400px;
+}
+.textareaHeight{
+    min-height: 120px;
+}
+.cardHover:hover .title{
+    text-decoration: underline;
+}
+.nextBlogHover:hover .arrows{
+    color: rgb(255, 66, 66) !important;
+}
+.dot{
+    font-size: 4px;
+}
+
+.mobNavActive{
+    transform: translateY(0%) !important;
+}

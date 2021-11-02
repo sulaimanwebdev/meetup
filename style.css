@@ -10,39 +10,75 @@ body{
     background-color: #F6F7F8;
 }
 
-.globleWidth{
-    max-width: 1316px;
-    margin: 0 auto;
-}
-.headerBorder{
-    border-bottom: 2px solid rgba(46,62,72,.12);
-}
 
-.grid1{
-    grid-template-columns: 1fr 300px;
-    width: 100%;
-}
-.flexImageWidth{
-    width: 450px;
-    height: 350px;
-}
+@media (max-width:1116px){
+    .imageFlex{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
 
-.pWidth{
-    max-width: 500px;
+    .flexImageWidth{
+        max-width: 230px !important;
+        margin-top: 30px;
+    }
+    .socialFlex{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .pWidth{
+        max-width: 100%;
+    }
 }
-.gridHeight{
-    max-height: 400px;
+@media (max-width:1024px){
+    .grid1{
+        grid-template-columns: 1fr;
+    }
+    .gridHeight{
+        max-height: 650px;
+    }
 }
-.textareaHeight{
-    min-height: 120px;
+@media (max-width:640px){
+    .gridHeight{
+        max-height: 1200px;
+    }
 }
-.cardHover:hover .title{
-    text-decoration: underline;
+@media (max-width:1036px){
+    .bottomGrid{
+        grid-template-columns: 1fr 1fr !important;
+    }
 }
-.nextBlogHover:hover .arrows{
-    color: rgb(255, 66, 66) !important;
+@media (max-width:710px){
+    .bottomGrid{
+        grid-template-columns: 1fr !important;
+    }
 }
-
-.dot{
-    font-size: 4px;
+@media (max-width:458px){
+    .paginationImageWidth{
+        display: none;
+    }
+}
+@media (max-width:358px){
+    .btnsFlex{
+        flex-direction: column !important;
+        width: 100%;
+    }
+    .btnsFlex a{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .time{
+        text-align: center;
+    }
+    .time i{
+        display: none;
+        
+    }
 }
