@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth !important;
+}
+body{
+    overflow-x: hidden;
+    background-color: #F6F7F8;
+}
+
+.headerBorder{
+    border-bottom: 2px solid rgba(46,62,72,.12);
+}
+
+.grid1{
+    grid-template-columns: 1fr 300px;
+    width: 100%;
+}
+.flexImageWidth{
+    width: 450px;
+    height: 350px;
+}
+
+.pWidth{
+    max-width: 500px;
+}
