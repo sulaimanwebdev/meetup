@@ -43,4 +43,6 @@ body{
     color: rgb(255, 66, 66) !important;
 }
 
-
+.dot{
+    font-size: 4px;
+}
