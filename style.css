@@ -45,9 +45,11 @@ body{
 .dot{
     font-size: 4px;
 }
-
 .mobNavActive{
     transform: translateY(0%) !important;
+}
+.bottomBtnImageHover:hover  img{
+    filter: brightness(0) invert(1) !important; 
 }
 
 @media (max-width:1116px){

@@ -27,7 +27,7 @@
     <a href="#" class="opacity-60 hover:text-blue-600">Sign up</a>
 
 </nav>
-<nav class="flex mobNav items-start bg-white pt-10 gap-5 pb-5 transition  lg:hidden absolute top-0 left-0 w-full px-10 z-10 flex-col  transform -translate-y-full">
+<nav class="flex mobNav items-start bg-white pt-10 gap-5 pb-5 transition  lg:hidden absolute top-0 left-0 w-full px-5 lg:px-10 z-10 flex-col  transform -translate-y-full">
     <a href="#" class="text-blue-600 font-medium">Start a new group</a>
     <a href="#" class="opacity-60 hover:text-blue-600">Login</a>
     <a href="#" class="opacity-60 hover:text-blue-600">Sign up</a>
@@ -40,23 +40,34 @@
 
 
 <!-- Header -->
-<div class="h-72 w-full bg-yellow-300"></div>
+<div class="px-5 lg:px-10 py-20 text-center w-full flex items-center justify-center relative text-white">
+    <img src="images/topBg.png" class="w-full h-full absolute top-0 left-0 object-cover object-center" alt="">
+    <div class="border-8 w-full sm:w-2/3 max-w-xl border-red-500 rounded px-5 py-10 flex items-center justify-center flex-col gap-6 relative z-1">
+         <div class="text-4xl font-medium leading-normal">Online Speed FRIENDING</div>
+
+         <div class="flex items-center gap-3">
+                <img src="images/avatar.png" class="w-12" alt="">
+                <div class="text-lg font-medium">Oneclick C.</div>
+         </div>
+
+    </div>
+</div>
 
 
 <!-- Main -->
 
-    <div class="w-full grid gap-10 grid1 px-10 mt-20 globleWidth">
+    <div class="w-full grid gap-10 grid1 px-5 lg:px-10 mt-20 globleWidth">
     <!-- leftside -->
 
 
 
 <div>
     <div class="border-4 rounded p-4">
-<div class="w-full h-96"><img class="w-full h-full object-fit" src="images/Image@21x.png" alt=""></div>
-<div class="flex items-center text-red-500 font-medium my-5">
+<div class="w-full h-96"><img class="w-full h-full object-cover position-center" src="images/Image@21x.png" alt=""></div>
+<a href="#" class="flex items-center text-red-500 font-medium my-5">
 <span class="border-r border-red-500 pr-3 mr-3">26 August 2020</span>
 <span>By Thomas Jones</span>
-</div>
+</a>
 
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repudiandae dolore aperiam odit numquam, accusamus mollitia dignissimos eveniet corrupti minima velit minus, repellendus fugit. Neque doloribus deleniti quae eligendi minus.</p>
 <br>
@@ -78,15 +89,15 @@
 
 <div class="flex items-center socialFlex justify-between mt-20 mb-10 mx-5">
     <div class="flex items-center gap-3 sm:flex-row flex-col ">
-        <span class="px-5 py-2 bg-red-500 text-white rounded text-sm">#designer</span>
-        <span class="px-5 py-2 bg-red-500 text-white rounded text-sm">#busniness</span>
-        <span class="px-5 py-2 bg-red-500 text-white rounded text-sm">#portfolio</span>
+        <a href="#" class="px-5 py-2 bg-red-500 text-white rounded text-sm transform transition hover:-translate-y-1">#designer</a>
+        <a href="#" class="px-5 py-2 bg-red-500 text-white rounded text-sm transform transition hover:-translate-y-1">#busniness</a>
+        <a href="#" class="px-5 py-2 bg-red-500 text-white rounded text-sm transform transition hover:-translate-y-1">#portfolio</a>
     </div>
     <div class="flex items-center gap-3">
-        <a href="#"><img class="w-11" src="images/facebook.png" alt=""></a>
-        <a href="#"><img class="w-11" src="images/Instagram@2x.png" alt=""></a>
-        <a href="#"><img class="w-11" src="images/Twitter@2x.png" alt=""></a>
-        <a href="#"><img class="w-11" src="images/linkedin@2x.png" alt=""></a>
+        <a href="#" class="transform transition hover:-translate-y-1"><img class="w-11" src="images/facebook.png" alt=""></a>
+        <a href="#"  class="transform transition hover:-translate-y-1"><img class="w-11" src="images/Instagram@2x.png" alt=""></a>
+        <a href="#"  class="transform transition hover:-translate-y-1"><img class="w-11" src="images/Twitter@2x.png" alt=""></a>
+        <a href="#"  class="transform transition hover:-translate-y-1"><img class="w-11" src="images/linkedin@2x.png" alt=""></a>
         </div>
 </div>
 </div>
@@ -186,8 +197,8 @@
         <div class="flex gap-3 w-full border-b-2 pb-5">
             <div class="w-16 h-16"><img class="object-fit position-center w-full h-full" src="images/Layer 2@2x.png" alt=""></div>
             <div>
-                <div class="text-base font-bold opacity-70">Name of Meetup</div>
-                <p class="text-red-400 font-medium mt-2">Public group</p>
+                <a  href="#" class="text-base font-bold opacity-70">Name of Meetup</a>
+                <a href="#" class="text-red-400 font-medium mt-2 block">Public group</a>
             </div>
          </div>
          <div class="flex items-start gap-2 mt-3">
@@ -206,8 +217,8 @@
     <div class="flex gap-3 w-full border-b-2 pb-5">
         <div class="w-16 h-16"><img class="object-fit position-center w-full h-full" src="images/Layer 2@2x.png" alt=""></div>
         <div>
-            <div class="text-base font-bold opacity-70">Name of Meetup</div>
-            <p class="text-red-400 font-medium mt-2">Public group</p>
+            <a href="#" class="text-base font-bold opacity-70">Name of Meetup</a><br>
+            <a href="#" class="text-red-400 font-medium mt-2 block">Public group</a>
         </div>
      </div>
      <div class="flex items-start gap-2 mt-3">
@@ -265,7 +276,7 @@
 
 
 
-<div class="globleWidth px-10 mt-20">
+<div class="globleWidth px-5 lg:px-10 mt-20">
 <div class="text-3xl font-medium mt-3 mb-2">SIMILAR EVENTS NEARBY</div>
 <div class="grid grid-cols-3 gap-8 mt-5 bottomGrid ">
      <a href="#" class="p-4 border-4 rounded transition cardHover">
@@ -305,7 +316,7 @@
 </div>
 
 
-<div class="globleWidth px-10 mt-16 mb-20">
+<div class="globleWidth px-5 lg:px-10 mt-16 mb-20">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
         <a href="#" class="nextBlogHover flex items-center justify-between flex-row-reverse gap-5 px-5 py-4 border-2 rounded">
             <img src="images/Secgrid2.png" class="w-28 paginationImageWidth" alt="">
@@ -334,13 +345,13 @@
 
 <div class=" sticky bottom-0 bg-white">
 
-    <div class=" globleWidth px-10 py-5 flex items-center justify-between gap-5 w-full flex-col  md:flex-row ">
+    <div class=" globleWidth px-5 lg:px-10 py-5 flex items-center justify-between gap-5 w-full flex-col  md:flex-row ">
         <div>
         <p class="flex items-center gap-2 time opacity-70">Thu, 23 September <i class="fas fa-circle dot"></i> 2:00 AM PKT</p>
         <div class="text-2xl mt-2 font-medium text-center md:text-left">Online Speed FRIENDING</div>
         </div>
         <div class="flex items-center btnsFlex gap-5">
-            <a href="#" class="px-6 py-3 transition border flex items-center gap-4 border-red-500 text-red-500 transform hover:-translate-y-1">Share <img src="images/Icon feather-share.svg" alt=""></a>
+            <a href="#" class="px-6 py-3 transition border flex items-center gap-4 border-red-500 text-red-500 hover:bg-red-500 hover:text-white bottomBtnImageHover">Share <img src="images/Icon feather-share.svg" alt=""></a>
             <a href="#" class="px-6 py-3  text-black bg-gray-300 transform hover:-translate-y-1 transition">Past Event</a>
         </div>
         
