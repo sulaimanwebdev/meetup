@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tailwind.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.1/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <title>Meetup</title>
 </head>
 <body>
@@ -105,13 +106,13 @@
 
 <div class="border-4 rounded p-4 mt-10 mb-10">
     <div class="text-3xl font-medium mt-3 mb-4">PHOTOS (2)</div>
-    <div class="grid grid-cols-1 grid-rows-6 md:grid-cols-2  md:grid-rows-3 lg:grid-rows-2 lg:grid-cols-3 gap-5 grid-rows-2 h-full gridHeight mb-3">
-        <div><img src="images/grid1.png" class="w-full h-full object-cover position-center" alt=""></div>
-        <div><img src="images/Image@2x.png" class="w-full h-full object-cover position-center" alt=""></div>
-        <div><img src="images/Rectangle 10  copy 2@2x.png" class="w-full h-full object-cover position-center" alt=""></div>
-        <div><img src="images/asd.png" class="w-full h-full object-cover position-center" alt=""></div>
-        <div><img src="images/asd2.png" class="w-full h-full object-cover position-center" alt=""></div>
-        <div><img src="images/asd3.png" class="w-full h-full object-cover position-center" alt=""></div>
+    <div class="grid grid-cols-1 grid-rows-6 md:grid-cols-2 singleGalleryImage  md:grid-rows-3 lg:grid-rows-2 lg:grid-cols-3 gap-5 grid-rows-2 h-full gridHeight mb-3">
+        <div class="cursor-pointer"><img src="images/grid1.png" class="w-full h-full object-cover position-center" alt=""></div>
+        <div class="cursor-pointer"><img src="images/Image@2x.png" class="w-full h-full object-cover position-center" alt=""></div>
+        <div class="cursor-pointer"><img src="images/Rectangle 10  copy 2@2x.png" class="w-full h-full object-cover position-center" alt=""></div>
+        <div class="cursor-pointer"><img src="images/asd.png" class="w-full h-full object-cover position-center" alt=""></div>
+        <div class="cursor-pointer"><img src="images/asd2.png" class="w-full h-full object-cover position-center" alt=""></div>
+        <div class="cursor-pointer"><img src="images/asd3.png" class="w-full h-full object-cover position-center" alt=""></div>
         
 
 
@@ -364,6 +365,46 @@
 <div class="h-96 w-full bg-gray-800"></div>
 
 
+<div class="w-full h-full fixed top-2/4 -left-full transition transform -translate-x-full -translate-y-2/4 mainModule">
+
+<div class="swiper h-full w-full mySwiper relative">
+    <div class="closeModal flex items-center justify-center cursor-pointer absolute top-5 right-10 text-3xl bg-white border border-black text-black rounded-full z-10 w-16 h-16">
+        <i class="far fa-times"></i>
+
+    </div>
+
+    <div class="closeModale"></div>
+    <div class="swiper-wrapper">
+      
+        <div class="swiper-slide text-center bg-white flex items-center justify-center"><img draggable="false" src="images/grid1.png" class=" w-full h-full object-cover position-center"  alt=""></div>
+        <div class="swiper-slide text-center bg-white flex items-center justify-center"><img draggable="false" src="images/Image@2x.png" class="w-full h-full object-cover position-center" alt=""></div>
+        <div class="swiper-slide text-center bg-white flex items-center justify-center"><img draggable="false" src="images/Rectangle 10  copy 2@2x.png" class="w-full h-full object-cover position-center" alt=""></div>
+        <div class="swiper-slide text-center bg-white flex items-center justify-center"><img draggable="false" src="images/asd.png" class="w-full h-full object-cover position-center" alt=""></div>
+        <div class="swiper-slide text-center bg-white flex items-center justify-center"><img draggable="false" src="images/asd2.png" class="w-full h-full object-cover position-center" alt=""></div>
+        <div class="swiper-slide text-center bg-white flex items-center justify-center"><img draggable="false" src="images/asd3.png" class="w-full h-full object-cover position-center" alt=""></div>
+
+
+
+    </div>
+    <div class="swiper-button-next flex items-center justify-center cursor-pointer absolute top-5 right-10  bg-white border border-black text-black rounded-full z-10"><i class="far fa-chevron-right text-4xl"></i></div>
+    <div class="swiper-button-prev flex items-center justify-center cursor-pointer absolute top-5 right-10  bg-white border border-black text-black rounded-full z-10"><i class="far fa-chevron-left text-4xl"></i></div>
+  </div>
+
+
+
+
+</div>
 <script src="script.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script>
+
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 </body>
 </html>

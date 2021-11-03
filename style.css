@@ -15,6 +15,11 @@ body{
     max-width: 1316px;
     margin: 0 auto;
 }
+.modalActive{
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    top: 50% !important;
+}
 .headerBorder{
     border-bottom: 2px solid rgba(46,62,72,.12);
 }
@@ -32,6 +37,9 @@ body{
 }
 .gridHeight{
     max-height: 400px;
+}
+.swiper-slide img{
+    user-select: none !important;
 }
 .textareaHeight{
     min-height: 120px;
@@ -51,6 +59,21 @@ body{
 .bottomBtnImageHover:hover  img{
     filter: brightness(0) invert(1) !important; 
 }
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: "" !important;
+}
+
+.swiper-button-next{
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.swiper-button-prev{
+    width: 60px !important;
+    height: 60px !important;
+}
+
+
 
 @media (max-width:1116px){
     .imageFlex{
