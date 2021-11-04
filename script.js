@@ -22,3 +22,15 @@ closeModal.addEventListener('click', ()=>{
     mainModule.classList.remove('modalActive');
 
 })
+
+
+window.onscroll = function() {scrollFunction()};
+let topFixedShadow = document.querySelector('.topFixedShadow');
+function scrollFunction() {
+  if (document.body.scrollTop > 621 || document.documentElement.scrollTop > 621) {
+    topFixedShadow.classList.add('topActive')
+  } else {
+    topFixedShadow.classList.remove('topActive')
+   
+  }
+}
